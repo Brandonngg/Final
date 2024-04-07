@@ -206,4 +206,12 @@ header {
     width: 24px;
     height: 24px;
   }
+  header {
+    padding: 20px 40px;
+    min-height: 140px;
+    max-width: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }/*# sourceMappingURL=style.css.map */
