@@ -44,6 +44,7 @@ header {
     background-color: #ffffff;
     color: #000;
     min-height: 100vh;
+    position: relative;
 }
 
 #game-board {
@@ -220,12 +221,34 @@ header {
     @include button-style;
 }
 
-@media (min-width:700px){
-	#pop-up{
-		font-size:2em;
-	}
+@media (max-width:700px){
+    body {
+        font-size: 14px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    #winner-popup {
+        width: 90%;
+        min-height: 50px;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+        .popup-image {
+            width: 16px;
+            height: 16px;
+        }
+
+        button {
+            padding: 8px 16px;
+            font-size: 0.8em;
+        }
+
+        #close-btn {
+            top: 5px;
+            right: -5px;
+            width: 24px;
+            height: 24px;
+        }
+    }
 }
-
-//test
-
-//public
